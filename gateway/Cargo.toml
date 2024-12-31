@@ -72,6 +72,9 @@ tracing-subscriber = { version = "0.3.18", features = [
 url = { version = "2.5.2", features = ["serde"] }
 uuid = { version = "1.10.0", features = ["serde", "v7"] }
 
+#New added dependencies
+thiserror = "1.0"
+async-trait = "0.1.83"
 
 [dev-dependencies]
 tempfile = "3.10.1"

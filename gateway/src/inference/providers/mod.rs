@@ -16,3 +16,4 @@ pub mod provider_trait;
 pub mod together;
 pub mod vllm;
 pub mod xai;
+pub mod cohere; //Cohere is a LLM provider that uses the Cohere API to generate text.

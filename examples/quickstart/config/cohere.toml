@@ -1,0 +1,14 @@
+[model.cohere-command]
+provider = "cohere"
+model_name = "command"
+credentials = { env = "COHERE_API_KEY" }
+
+[function.cohere-chat]
+model = "cohere-command"
+description = "Chat with Cohere's command model"
+parameters = { type = "object", properties = {} }
+
+[function.cohere-chat.retry]
+max_retries = 3
+initial_delay = 1
+max_delay = 10
